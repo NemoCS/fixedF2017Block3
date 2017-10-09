@@ -8,7 +8,7 @@
 
 team_name = 'Team 5' # Only 10 chars displayed.
 strategy_name = 'a failure'
-strategy_description = 'Colludes first 5 rounds, betrays if the patters cccc, bbbb, cbcbc, or bcbcb show up, betrays four times if betrays, and colludes otherwise.'
+strategy_description = 'Colludes first 5 rounds, betrays if the patterns cccc, bbbb, cbcbc, or bcbcb show up, betrays four times if betrays, and colludes otherwise.'
 
 def move(my_history, their_history, my_score, their_score):
     if len(my_history) < 6:
