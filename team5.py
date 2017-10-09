@@ -11,24 +11,6 @@ strategy_name = 'a failure'
 strategy_description = 'Colludes first 5 rounds, betrays if the patters cccc, bbbb, cbcbc, or bcbcb show up, betrays four times if betrays, and colludes otherwise.'
 
 def move(my_history, their_history, my_score, their_score):
-    #if len(my_history) < 2:
-    #    return 'c'
-    #elif 'b' in their_history[-1] or 'b' in their_history[-2]:
-    #    return 'b'
-    #else:
-    #    if len(my_history) > 1 and len(my_history) < 5:
-    #        return 'b'
-    #    if 'bbbb' in their_history:
-    #        return 'b'
-    #    elif 'cccc' in their_history:
-    #        return 'b'
-    #    elif their_history[0:4] == 'bcbc':
-    #        if their_history[-1] == 'b':
-    #            return 'c'
-    #        elif their_history[-1] == 'c':
-    #            return 'b'
-    #    else:
-    #        return 'b'
     if len(my_history) < 6:
         return 'c'
     elif 'b' in their_history[-1] or 'b' in their_history[-2] or 'b' in their_history[-3] or 'b' in their_history[-4]:
