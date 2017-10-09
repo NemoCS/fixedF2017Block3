@@ -38,26 +38,13 @@ import example4, example5, example6, example7
 import team0, team1, team2, team3, team4
 import team5, team6, team7, team8, team9
 import team10, team11, team12, team13, team14
-import team15, team16, team17, team18, team19
 betray = example1
 collude = example0
 
 modules = [example0, example1, example2, example3, example4, example5, example6, example7,
 team0, team1, team2, team3, team4, team5, team6, team7, team8, team9, team10, 
-team11, team12, team13, team14, team15, team16, team17, team18,team19]
-
-##### Change this team list to change what strategies are included ########
-teams=[team0,team1,team2,team3,team4,team5,team6,team7,team8,team9,team10,team11,team12,team13,team14,team15,team16,team17,team18,team19]
-##########################################################################
-# You should try a variety of different mixes of teams to see what happens
-# in different situations. The success of your program depends on what types
-# of other programs you are playing against!
-###########################################################################
-# examples of how to add more than one of a strategy:
-# teams = [team0, team1, team2] + 4*[team3] + 4*[team6]
-# teams = [team1, team1, team1, team2, team2, team2, team7]
-###########################################################################
-
+team11, team12, team13, team14]
+teams=[team2,example0, example1, example2, example3, example4, example5, example6, example7]
 for module in modules:
     reload(module)
     print ('reloaded',module)
@@ -260,6 +247,7 @@ def make_section1(modules, scores):
     # Last line
     section1 += 'TOTAL  :'
     for index in range(len(modules)):
+
         section1 += '{:>7}'.format(sum(scores[index]))     
     return section1+'\n'
     
