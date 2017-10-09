@@ -1,15 +1,14 @@
-####
-# Each team's file must define four tokens:
-#     team_name: a string
-#     strategy_name: a string
-#     strategy_description: a string
-#     move: A function that returns 'c' or 'b'
-####
-
-team_name = 'Betray' # Only 10 chars displayed.
-strategy_name = 'Always betrays'
-strategy_description = 'Always betrays'
+#TEAM 1
+#Greg Hall and Lucas Huffman
+team_name = 'Swhallo'
+strategy_name = "return 'b' 7/10 of time"
+strategy_description = "Return 'c' at 0, 5, and multiples of 5"
     
 def move(my_history, their_history, my_score, their_score):
-    #always betrays
-    return 'b'
+    if len(my_history) == 0:
+        return 'c'
+    if len(my_history)%5 == 0:
+        return 'c'
+    else:
+        return 'b'
+    
