@@ -1,5 +1,4 @@
 #team - Griffin,Thomas
-
 team_name = "Random65"
 strategy_name = 'Betray 65 percent'
 strategy_description = 'Betray 65 percent of the time'
